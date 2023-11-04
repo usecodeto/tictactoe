@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Montserrat:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 50px;
+    background-color: rgb(32, 5, 102);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding: 10px 10px;
+    font-weight: bolder;
+}
+.gamecontainer{
+  
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin-top: 50px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-size: 8vw;
+    font-family: 'EB Garamond', serif;
+
+}
+.boxitem{
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+.boxitem:hover{
+    background-color: bisque;
+}
+.boxtext{
+    padding: 27px;
+}
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.bt0{
+    border-top: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+.imgbox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+
+}
+.gameinfo{
+    padding: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.turninfo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+
+}
+#reset{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 5px 6px;
+}
+@media screen and (max-width : 800px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+        background-color: antiquewhite;
+    }
+    .boxitem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gameinfo h1{
+        font-size: 1.2rem;
+        background-color: blueviolet;
+    }
+}
